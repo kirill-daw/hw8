@@ -43,11 +43,19 @@ public class Main {
 
         System.out.println("Task 2: ");
         for (int i1 = 0; i1 < array1.length; i1++) {
-            System.out.print(array1[i1] + ", ");
+            if (i1 == array1.length - 1) {
+                System.out.print(array1[i1]);
+            } else {
+                System.out.print(array1[i1] + ", ");
+            }
         }
         System.out.println();
         for (int i2 = 0; i2 < array2.length; i2++) {
-            System.out.print(array2[i2] + ", ");
+            if (i2 == array2.length - 1) {
+                System.out.print(array2[i2]);
+            } else {
+                System.out.print(array2[i2] + ", ");
+            }
         }
         System.out.println();
         for (int i3 = 0; i3 < array3.length; i3++) {
@@ -60,15 +68,23 @@ public class Main {
         System.out.println();
 
         System.out.println("Task 3: ");
-        for (int i1 = 2; i1 >= 0; i1--) {
-            System.out.print(array1[i1] + ", ");
+        for (int i1 = array1.length - 1; i1 >= 0; i1--) {
+            if (i1 == 0) {
+                System.out.print(array1[i1]);
+            } else {
+                System.out.print(array1[i1] + ", ");
+            }
         }
         System.out.println();
-        for (int i2 = 2; i2 >= 0; i2--) {
-            System.out.print(array2[i2] + ", ");
+        for (int i2 = array2.length - 1; i2 >= 0; i2--) {
+            if (i2 == 0) {
+                System.out.print(array2[i2]);
+            } else {
+                System.out.print(array2[i2] + ", ");
+            }
         }
         System.out.println();
-        for (int i3 = 6; i3 >= 0; i3--) {
+        for (int i3 = array3.length - 1; i3 >= 0; i3--) {
             if (i3 == 0) {
                 System.out.print(array3[i3]);
             } else {
@@ -79,7 +95,7 @@ public class Main {
 
         System.out.println("Task 4: ");
         for (int i1 = 0; i1 < array1.length; i1++) {
-            if (!(array1[i1] % 2 == 0)) {
+            if (array1[i1] % 2 != 0) {
                 array1[i1] += 1;
             }
         }
